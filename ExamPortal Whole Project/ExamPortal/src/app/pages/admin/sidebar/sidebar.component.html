@@ -1,0 +1,63 @@
+<mat-card>
+  <mat-action-list>
+    <div mat-subheader>Menu</div>
+
+    <button routerLink="/admin" mat-list-item class="menu-item">
+      <span class="icon-label">
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span class="label">Home</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/admin/profile" class="menu-item">
+      <span class="icon-label">
+        <mat-icon mat-list-icon>account_circle</mat-icon>
+        <span class="label">Profile</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/admin/categories" class="menu-item">
+      
+      <span class="icon-label">
+        <mat-icon mat-list-icon>list</mat-icon>
+        <span class="label">Categories</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/admin/add-category" class="menu-item">
+     
+
+      <span class="icon-label">
+        <mat-icon mat-list-icon>add_circle_outline</mat-icon>
+        <span class="label">Add Categories</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/admin/quizzes"class="menu-item">
+      
+
+      <span class="icon-label">
+        <mat-icon mat-list-icon>quize</mat-icon>
+        <span class="label">Quizzes</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/admin/add-quiz"class="menu-item">
+      <span class="icon-label">
+        <mat-icon mat-list-icon>add</mat-icon>
+        <span class="label">Add Quiz</span>
+      </span>
+    </button>
+
+    <button mat-list-item routerLink="/login"class="menu-item">
+  
+      <span class="icon-label">
+        <mat-icon mat-list-icon>logout</mat-icon>
+        <span class="label">Logout</span>
+      </span>
+    </button>
+
+    <!-- Add other menu items similarly -->
+
+  </mat-action-list>
+</mat-card>

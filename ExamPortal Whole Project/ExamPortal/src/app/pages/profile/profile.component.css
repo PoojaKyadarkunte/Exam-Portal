@@ -1,0 +1,27 @@
+.profile-image{
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #ff4081;
+    border-radius:50%;
+}
+
+.table{
+    width: 100%;
+    border: 5px solid grey;
+    border-collapse: collapse;
+}
+
+.table tr td{
+    padding: 10px 20px;
+    border: 1px solid grey;
+
+}
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+.button-space {
+    margin: 0 10px; /* Adjust the value as per your desired spacing */
+  }
+  
+  

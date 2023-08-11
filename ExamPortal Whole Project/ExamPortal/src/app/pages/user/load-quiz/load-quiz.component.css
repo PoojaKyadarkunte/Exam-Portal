@@ -1,0 +1,32 @@
+.truncate
+{
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+  .example-header-image {
+  background-image: url("/assets/logo2.png");
+  background-size: cover;
+}
+
+  
+  .custom-card-content {
+    height: 60px;
+    margin-top: 5%; /* Adjust the height as needed */
+  }
+  
+  .custom-card-action {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+
+  .custom-card {
+    margin-bottom: 10px;
+    height: 80%; /* Decrease the margin as needed */
+  }
+  
+  

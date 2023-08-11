@@ -1,0 +1,57 @@
+<mat-card *ngIf="user">
+    <h3 class="text-center"><b>Your profile details!!</b></h3>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+      <div class="bootstrap-wrapper">
+        <div class="container">
+          <div class="container text-center">
+            <img
+              src="https://e7.pngegg.com/pngimages/753/432/png-clipart-user-profile-2018-in-sight-user-conference-expo-business-default-business-angle-service-thumbnail.png"
+              alt=""
+              class="profile-image"
+            />
+          </div>
+          <h1 class="text-center mt20">{{user.firstName}} {{user.lastName}}</h1>
+
+  
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <!-- //table details -->
+              <table class="table">
+                <tr>
+                  <td>Username</td>
+                  <td>{{user.username}}</td>
+                </tr>
+  
+                <tr>
+                  <td>UserId</td>
+                  <td>User Id {{user.id}}</td>
+                </tr>
+  
+                <tr *ngIf="user.phone">
+                  <td>Phone</td>
+                  <td>{{user.phone}}</td>
+                </tr>
+  
+                <tr>
+                    <td>Role</td>
+                    <td>{{user.authorities[0].authority}}</td>
+                </tr>
+  
+                <tr>
+                    <td>Status</td>
+                    <td>{{user.enabled?"ACTIVE":"NOT ACTIVE"}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+      <button mat-raised-button color="primary">UPDATE</button>
+      <span class="button-space"></span>
+      <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  

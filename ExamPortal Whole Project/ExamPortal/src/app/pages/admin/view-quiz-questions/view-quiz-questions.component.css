@@ -1,0 +1,9 @@
+.mat-card-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+  }
+
+  .mat-card-actions button {
+    margin-right: 8px;
+  }
