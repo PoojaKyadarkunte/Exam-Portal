@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
       this.isLoggedIn=this.login.isLoggedIn();
       this.user=this.login.getUser();
     })
-   
+    console.log("Modify kela re baba!!");
   }
 
   public logout(){
